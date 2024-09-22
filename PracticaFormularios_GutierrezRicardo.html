@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Students Data Entry Form</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="dialog">
+                <label for="student-name">Student Name:</label>
+                <input type="text" name="student-name" required placeholder="Write your name here"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" required placeholder="email@youremail.com"><br><br>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" value="boy">
+                    <label for="boy">Boy</label>
+                    <input type="radio" name="gender" value="girl">
+                    <label for="girl">Girl</label>
+                </div><br>
+
+                <div>
+                    <label for="subjects">Subjects:</label>
+                    <input type="checkbox" name="subjects" value="tamil">
+                    <label for="tamil">Tamil</label>
+                    <input type="checkbox" name="subjects" value="telugu">
+                    <label for="telugu">Telugu</label>
+                    <input type="checkbox" name="subjects" value="english">
+                    <label for="english">English</label>
+                    <input type="checkbox" name="subjects" value="physics">
+                    <label for="physics">Physics</label>
+                    <input type="checkbox" name="subjects" value="economics">
+                    <label for="economics">Economics</label>
+                </div><br>
+
+                <label for="city-town">City / Town:</label>
+                <select name="cities-towns" id="cities-towns">
+                    <option value="ciudad-obregon">Ciudad Obregón</option>
+                    <option value="guasave">Guasave</option>
+                    <option value="navojoa" selected>Navojoa</option>
+                    <option value="tijuana">Tijuana</option>
+                    <option value="mexicali">Mexicali</option>
+                </select><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments" id="comments" cols="50" rows="7"></textarea><br><br>
+
+                <input type="reset" value="Clear">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
